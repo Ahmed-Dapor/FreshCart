@@ -33,11 +33,11 @@ export default function Categories() {
 
 
 
-    <div className='flex flex-wrap justify-center pt-4 '>
-      {categories.map((category) => <div className='p-2 w-1/4 '>
+    <div className='flex flex-wrap justify-center pt-4 pb-5 '>
+      {categories.map((category , index) => <div key={index} className='p-2 lg:w-1/4 '>
 
         <div className=' my-3 p-4 cat'>
-          <img src={category.image} className='w-full h-[200px]' alt="" />
+          <img src={category.image} className='w-full h-[300px]' alt="" />
           <h2 className='text-center font-semibold'>{category.name}</h2>
         </div>
 

@@ -32,7 +32,7 @@ export default function Products() {
 
 
         {allproducts.length ? <div className="flex flex-wrap justify-center pt-4">
-            {allproducts.map((product, index) => <div key={index} className='w-1/5 p-1'>
+            {allproducts.map((product, index) => <div key={index} className='lg:w-1/5 p-1'>
 
 
                 <div className=" product p-4  ">

@@ -40,7 +40,7 @@ export default function Home() {
     <CategorySlider />
 
     {products.length ?
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center pb-5">
         {products.map((product, index) => <RecentProducts key={index} product={product} />)}
       </div> : <div className='flex justify-center items-center'>
 

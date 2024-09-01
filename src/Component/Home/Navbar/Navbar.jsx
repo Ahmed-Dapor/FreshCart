@@ -31,13 +31,14 @@ navigate('/login')
             <li className='mx-2'><NavLink className=' text-gray-500' to='products'>products</NavLink></li>
             <li className='mx-2'><NavLink className=' text-gray-500' to='categories'>categories</NavLink></li>
             <li className='mx-2'><NavLink className=' text-gray-500' to='brands'>brands</NavLink></li>
+            <li className='mx-2'><NavLink className=' text-gray-500' to='wishlist'>wishlist</NavLink></li>
           </ul>}
         </div>
         <div className='flex flex-col lg:flex-row '>
          
           <ul className='flex flex-col lg:flex-row'>
            
-            <li className='mx-2 relative'><NavLink className=' text-main text-2xl fa-2xl' to='cart'><i className="fa-solid fa-cart-shopping"></i> </NavLink> <span className='text-white absolute left-1/2'> {cart ? cart.numOfCartItems : 0}</span></li>
+            <li className='mx-2 relative'><NavLink className=' text-main text-2xl fa-2xl' to='cart'><i className="fa-solid fa-cart-shopping"></i> </NavLink>  <span className='text-white absolute left-1/2 bottom-1/2 w-6 h-6 bg-red-600 rounded-full'> {cart ? cart.numOfCartItems : 0}</span></li>
 
             <li className='space-x-2 mx-2'>
               <i className='fab fa-facebook-f'></i>

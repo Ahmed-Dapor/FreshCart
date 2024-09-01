@@ -36,7 +36,7 @@ export default function Brands() {
 
     <div className='flex flex-wrap justify-center pt-4'>
 
-      {brands.map((brand) => <div className='w-1/4 p-4'>
+      {brands.map((brand , index) => <div key={index} className='lg:w-1/4 p-4'>
         <div className='my-3 p-2 brand '>
 
           <img src={brand.image} className='w-full h-[200px]' alt="" />

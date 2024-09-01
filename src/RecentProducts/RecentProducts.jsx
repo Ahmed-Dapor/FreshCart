@@ -5,10 +5,12 @@ import { CartContext } from '../Context/CartContext'
 
 
 
+
 export default function RecentProducts({ product }) {
 
 
     let { addProductToCart } = useContext(CartContext)
+   
 
 
 
@@ -17,7 +19,7 @@ export default function RecentProducts({ product }) {
 
 
     return <>
-        <div className="w-1/6 product p-4  ">
+        <div className=" lg:w-1/6 product p-4  ">
 
             <div>
                 <Link to={`productdetails/${product.id}`}>
